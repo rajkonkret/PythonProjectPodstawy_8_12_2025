@@ -45,4 +45,35 @@ print(39 + int("39"))  # 78
 print(str(39))  # rzurtowanie na string
 print("Kowalski" + str(1))  # Kowalski1
 
+print(5 * "4")  # 44444
+print(35 * "168")
+# 168168168168168168168168168168168168168168168168168168168168168168168168168168168168168168168168168168168
 
+# zmienna - pudełko na dane
+
+# typowanie dynamiczne
+name = "Radek"
+print(type(name))  # <class 'str'>
+print(name)  # Radek
+
+name = 90
+print(name)  # 90
+print(type(name))  # <class 'int'>
+
+# podpowiedzi typów
+name: str = "Raadek"
+print(name)
+
+name = 90
+print(name)
+# mypy - sprawdzanie uzycia typów
+# pip - menadżer pakietów
+#  pip install mypy
+# cd dzien1
+# cd .. - poziom wyzej
+# (.venv) radoslawjaniak@MacBook-Air-radosaw-2 dzien1 % mypy pierwszy.py
+# pierwszy.py:59: error: Incompatible types in assignment (expression has type "int", variable has type "str")  [assignment]
+# pierwszy.py:64: error: Name "name" already defined on line 55  [no-redef]
+# pierwszy.py:67: error: Incompatible types in assignment (expression has type "int", variable has type "str")  [assignment]
+# Found 3 errors in 1 file (checked 1 source file)
+# (.venv) radoslawjaniak@MacBook-Air-radosaw-2 dzien1 %
