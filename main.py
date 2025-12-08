@@ -18,3 +18,4 @@ if __name__ == '__main__':
 # Hi, PyCharm
 # 2x shift - wyszukiwarka
 # wheel, theme
+# https://peps.python.org/pep-0008/
