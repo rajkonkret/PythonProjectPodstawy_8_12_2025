@@ -43,3 +43,14 @@ print(f'{user:<10}')  # "Tomek     " wyrównaj do lewej
 print(f'{user:>15}')  # "          Tomek"
 print(f'{user:^20}')  # "       Tomek        "
 print(f'{user:.^20}')  # ".......Tomek........"
+
+liczba = 890765432123456
+print(liczba)
+print(f"Nasza duża liczba {liczba:,}")  # Nasza duża liczba 890,765,432,123,456
+print(f"Nasza duża liczba {liczba:_}")  # Nasza duża liczba 890_765_432_123_456
+print(f"Nasza duża liczba {liczba:_}".replace("_", " "))  # Nasza duża liczba 890 765 432 123 456
+print(f"Nasza duża liczba {liczba:_}".replace("_", "."))  # Nasza duża liczba 890.765.432.123.456
+
+liczba = 1_500_000_000_000_000
+print(liczba)
+print(type(liczba))  # <class 'int'>
