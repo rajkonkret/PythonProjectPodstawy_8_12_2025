@@ -36,6 +36,36 @@ print(tekst.removeprefix("Witaj").strip())  # "Świecie"
 encode_s = tekst.encode("utf-8")
 print(encode_s)  # b'Witaj \xc5\x9awiecie'
 print(type(encode_s))  # <class 'bytes'>, dane bajtowe
-print(encode_s.decode('utf-8')) # Witaj Świecie
+print(encode_s.decode('utf-8'))  # Witaj Świecie
 
+imie = "Radek"
+print(len(imie))  # dlugość 5
 
+# f - string format - wstrzykiwanie wartości zmiennych do tekstu
+tekst_format = f'Mam na imię {imie}'
+print(tekst_format)  # Mam na imię Radek
+
+tekst_format = f"\tMam na imię {imie}\n i lubię pythona.\b"
+print(tekst_format)
+# \t tab
+# \n - nowa linia
+# \b backspace
+# "	Mam na imię Radek
+#  i lubię pythona"
+
+starszy = 'Witaj %s!'  # %s - string
+print(starszy % imie)  # Witaj Radek!
+
+print("Witaj {}".format("Radek"))  # Witaj Radek
+
+print("Witaj", imie)  # Witaj Radek
+
+print("""
+Teskt
+    wielolinijkowy""")
+# "Teskt
+#     wielolinijkowy"
+
+# dokumentacja
+"""Komentarz 
+    wielolinijkowy"""
