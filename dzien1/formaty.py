@@ -25,3 +25,21 @@ print("Używamy wersji pythona %.1f" % 3.9)  # Używamy wersji pythona 3.9
 print("Używamy wersji pythona %.0f" % 3.9)  # Używamy wersji pythona 4 zaokrągla
 print("Używamy wersji pythona %.f" % 3.9)  # Używamy wersji pythona 4 zaokrągla
 
+x = 3.8769
+print(x)  # 3.8769
+y = round(x)
+print(y)  # 4
+
+z = round(x, 2)
+print(z)  # 3.88
+print(type(z))  # <class 'float'>
+
+print(f"Używam wersji pythona {wersja}")  # Używam wersji pythona 3.90001
+print(f"Używam wersji pythona {wersja:.2f}")  # Używam wersji pythona 3.90
+print(f"Używam wersji pythona {wersja:.1f}")  # Używam wersji pythona 3.9
+print(f"Używam wersji pythona {wersja:.0f}")  # Używam wersji pythona 4
+
+print(f'{user:<10}')  # "Tomek     " wyrównaj do lewej
+print(f'{user:>15}')  # "          Tomek"
+print(f'{user:^20}')  # "       Tomek        "
+print(f'{user:.^20}')  # ".......Tomek........"
