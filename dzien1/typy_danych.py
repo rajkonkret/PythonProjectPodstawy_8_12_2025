@@ -78,3 +78,15 @@ print(False or False)  # False
 # not - negacja
 print(not True)  # False
 print(not False)  # True
+
+a = 6
+b = 8
+
+print(f"Porównanie {a} > {b} = {a > b}")  # Porównanie 6 > 8 = False#    Porównanie 6 > 8 = False
+print(f"Porównanie {a} < {b} = {a < b}")  # Porównanie 6 < 8 = True#     Porównanie 6 < 8 = True
+print(f"Porównanie {a} <= {b} = {a <= b}")  # Porównanie 6 <= 8 = True#  Porównanie 6 <= 8 = True
+print(f"Porównanie {a} >= {b} = {a >= b}")  # Porównanie 6 >= 8 = False# Porównanie 6 >= 8 = False
+print(f"porównanie { a >= b = }")  # porównanie  a >= b = False
+#                    "a >= b = "
+print(f"Porównanie {a} == {b} = {a == b}")  # == czy równe? Porównanie 6 == 8 = False
+print(f"Porównanie {a} != {b} = {a != b}")  # != czy różne? Porównanie 6 != 8 = True
