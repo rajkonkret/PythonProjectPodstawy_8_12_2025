@@ -90,3 +90,4 @@ print(f"porównanie { a >= b = }")  # porównanie  a >= b = False
 #                    "a >= b = "
 print(f"Porównanie {a} == {b} = {a == b}")  # == czy równe? Porównanie 6 == 8 = False
 print(f"Porównanie {a} != {b} = {a != b}")  # != czy różne? Porównanie 6 != 8 = True
+# https://naukapythona.com.pl/
