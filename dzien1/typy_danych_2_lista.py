@@ -39,3 +39,13 @@ print(lista[-1])  # Paulina
 #   -6          -5       -4      -3       -2       -1
 
 print(lista[-3])  # Marek
+
+# slicowanie - fragment listy
+print(lista[0:3])  # 012, ['Radek', 'Tomek', 'Zenek']
+print(lista[:3])  # ['Radek', 'Tomek', 'Zenek']
+
+print(lista[2:])  # ['Zenek', 'Marek', 'Magda', 'Paulina'], z ostatnim włącznie
+print(lista[2:5])  # ['Zenek', 'Marek', 'Magda'] bez ostatniego
+
+print(lista[2:30])  # ['Zenek', 'Marek', 'Magda', 'Paulina']
+print(lista[12:24])
