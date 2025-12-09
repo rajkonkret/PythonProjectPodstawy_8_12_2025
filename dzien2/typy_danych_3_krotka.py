@@ -27,3 +27,45 @@ del tupla_jeden
 
 
 print(len(tupla_imiona))  # długosc 4
+
+tup = 1, 2
+print(type(tup))  # <class 'tuple'>
+
+a = tup[0]
+b = tup[1]
+print(a, b)  # 1 2
+
+a, b = 1, 2
+print(a, b)  # 1 2
+
+# rozpakowanie krotki
+a, b = tup
+print(a, b)  # 1 2
+
+print(tupla_imiona)
+print(len(tupla_imiona))  # 4
+# ('Zenek', 'Marek', 'Radek', 'Ania')
+
+# * worek na pozostałe dane
+*name1, name2, name3 = tupla_imiona
+print(name1, name2, name3)
+# ['Zenek', 'Marek'] Radek Ania
+
+name1, name2, *name3 = tupla_imiona
+print(name1, name2, name3)
+# Zenek Marek ['Radek', 'Ania']
+
+name1, *name2, name3 = tupla_imiona
+print(name1, name2, name3)
+# Zenek ['Marek', 'Radek'] Ania
+
+print(tupla_imiona.count("Radek"))  # 1
+print(tupla_imiona.index("Radek"))  # 2
+
+# sorted() - sortowanie
+print(sorted(tupla_imiona))  # zwróci liste
+# ['Ania', 'Marek', 'Radek', 'Zenek']
+print(tupla_imiona)  # nie zostaje zmieniona
+
+lista_tup = list(tupla_imiona)
+print(lista_tup)  # ['Zenek', 'Marek', 'Radek', 'Ania']
