@@ -131,6 +131,44 @@ print(lista)  # []
 print(lista2)  # []
 print(lista_copy)  # ['Radek', 'Ola', 'Magda', 'Radek']
 
+# id() - pokazuje referencje
 print(id(lista))  # 4309054912
 print(id(lista2))  # 4309054912
 print(id(lista_copy))  # 4309620480
+
+liczby = [54, 999, 34, 12.34, 567, 999]
+print(liczby)  # [54, 999, 34, 12.34, 567, 999]
+print(type(liczby))  # <class 'list'>
+
+liczby.sort()  # zmienia oryginał
+print(liczby)  # [12.34, 34, 54, 567, 999, 999]
+
+liczby = [54, 999, 34, 12.34, 567, 999, "A"]
+print(liczby)  # [54, 999, 34, 12.34, 567, 999, 'A']
+print(type(liczby))  # <class 'list'>
+
+# liczby.sort()
+# TypeError: '<' not supported between instances of 'str' and 'int'
+
+print(lista_copy)
+lista_copy.sort()
+print(lista_copy)  # ['Magda', 'Ola', 'Radek', 'Radek']
+
+lista_copy.sort(reverse=True)  # sortowanie i odwrócenie
+print(lista_copy)  # ['Radek', 'Radek', 'Ola', 'Magda']
+
+lista_copy.reverse()  # tylko odwraca
+print(lista_copy)  # ['Magda', 'Ola', 'Radek', 'Radek']
+
+liczby[3] = 666
+print(liczby[0:3])  # [54, 999, 34]
+print(liczby[-3])  # 567
+print(liczby)  # [54, 999, 34, 666, 567, 999, 'A']
+
+# rozpakowanie sekwencji
+tekst = "Pyth on."
+lista1 = list(tekst)
+print(lista1)  # ['P', 'y', 't', 'h', ' ', 'o', 'n', '.']
+
+lista2 = [tekst]
+print(lista2)  # ['Pyth on.']
