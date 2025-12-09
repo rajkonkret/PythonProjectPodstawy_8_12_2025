@@ -172,3 +172,8 @@ print(lista1)  # ['P', 'y', 't', 'h', ' ', 'o', 'n', '.']
 
 lista2 = [tekst]
 print(lista2)  # ['Pyth on.']
+
+# tworzenie krotki (tupli) z listy
+krotka = tuple(lista_copy)
+print(type(krotka))  # <class 'tuple'>
+print(krotka)  # ('Magda', 'Ola', 'Radek', 'Radek')
