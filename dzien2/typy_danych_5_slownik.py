@@ -53,3 +53,23 @@ print(dictionary)
 dict_small = {'x': 2}
 dict_small.update([("y", 2), ("z", 5)])
 print(dict_small)  # {'x': 2, 'y': 2, 'z': 5}
+
+# input() - pozwala wprowadzic dane: np.:  z klawiatury
+# tekst = input("Podaj imię:")
+# print(tekst)
+# Podaj imię:Radek
+# Radek
+
+# napisac aplikację kalkulator
+# input zwraca str
+# print(eval("2 + 2"))
+# a = float(input("Podaj pierwszą liczbę"))
+# b = input("Podaj drugą liczbę")
+# print(a + int(b))  # 3.0
+
+# napisac aplikację słownik pol-ang
+pol_ang = {"pies": "dog", "kot": "cat", "dach": "roof"}
+print(pol_ang.keys())
+odp = input("Podaj słówko do przetłumaczenia:")
+# print(pol_ang[odp])
+print(pol_ang.get(odp.strip().casefold(), "Nie ma"))
