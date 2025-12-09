@@ -57,3 +57,30 @@ print(lista[:])  # ['Radek', 'Tomek', 'Zenek', 'Marek', 'Magda', 'Paulina']
 #   -6          -5       -4      -3       -2       -1
 print(lista[-2:0])  # [4:0], []
 print(lista[0:-2])  # ['Radek', 'Tomek', 'Zenek', 'Marek'] [0:4]
+
+# range() - generuje liczby z zakresu
+lista_15 = list(range(15))  # od 0 do 14
+print(lista_15)  # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+
+print(lista_15[0:15:2])  # [start:stop:krok], [0, 2, 4, 6, 8, 10, 12, 14]
+print(lista_15[::2])  # [0, 2, 4, 6, 8, 10, 12, 14]
+print(lista_15[::3])  # [0, 3, 6, 9, 12]
+
+print(list(range(0, 15, 2)))  # [0, 2, 4, 6, 8, 10, 12, 14] (start, stop, krok)
+
+# wyswietli liste w odwrotnej kolejności
+print(lista[::-1])
+# ['Paulina', 'Magda', 'Marek', 'Zenek', 'Tomek', 'Radek']
+
+# nadpiasnie elementu w liscie, na wskazanym indeksie
+lista[3] = "Asia"
+print(lista)
+# ['Radek', 'Tomek', 'Zenek', 'Asia', 'Magda', 'Paulina']
+
+lista.insert(1, "Ola")
+print(lista)
+# ['Radek', 'Ola', 'Tomek', 'Zenek', 'Asia', 'Magda', 'Paulina']
+
+lista_nowa = []
+lista_nowa.insert(1, "Drek")
+print(lista_nowa)  # ['Drek']
