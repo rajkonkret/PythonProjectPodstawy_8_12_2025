@@ -1,4 +1,5 @@
 # kolekcje
+from os import killpg
 
 # lista - przechowuje dowolną ilość dnych, różnego typu
 # zachowuje kolejności
@@ -114,4 +115,22 @@ print(lista)
 # sprawdzzenie indeksu dla elementu, pierwszy z lewej
 print(lista.index("Radek"))  # indeks 0
 
+a = 1
+b = 3
+print(f"{a=}, {b=}")  # a=1, b=3
+a = b
+print(f"{a=}, {b=}")  # a=3, b=3
 
+lista2 = lista  # kopia adresu, referencji
+lista_copy = lista.copy()  # kopia eleemntów listy do drugiej listy
+print(lista)  # ['Radek', 'Ola', 'Magda', 'Radek']
+print(lista2)  # ['Radek', 'Ola', 'Magda', 'Radek']
+
+lista.clear()  # usunięcie wszystkich elementów z listy
+print(lista)  # []
+print(lista2)  # []
+print(lista_copy)  # ['Radek', 'Ola', 'Magda', 'Radek']
+
+print(id(lista))  # 4309054912
+print(id(lista2))  # 4309054912
+print(id(lista_copy))  # 4309620480
