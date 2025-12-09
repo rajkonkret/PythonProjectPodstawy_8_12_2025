@@ -73,3 +73,5 @@ print(pol_ang.keys())
 odp = input("Podaj słówko do przetłumaczenia:")
 # print(pol_ang[odp])
 print(pol_ang.get(odp.strip().casefold(), "Nie ma"))
+
+print("\N{LATIN SMALL LETTER SHARP S}")  # ß
