@@ -49,3 +49,11 @@ print(lista[2:5])  # ['Zenek', 'Marek', 'Magda'] bez ostatniego
 
 print(lista[2:30])  # ['Zenek', 'Marek', 'Magda', 'Paulina']
 print(lista[12:24])
+
+print(lista[:])  # ['Radek', 'Tomek', 'Zenek', 'Marek', 'Magda', 'Paulina']
+
+# ['Radek', 'Tomek', 'Zenek', 'Marek', 'Magda', 'Paulina']
+#    0         1         2       3        4         5
+#   -6          -5       -4      -3       -2       -1
+print(lista[-2:0])  # [4:0], []
+print(lista[0:-2])  # ['Radek', 'Tomek', 'Zenek', 'Marek'] [0:4]
