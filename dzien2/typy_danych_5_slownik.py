@@ -38,3 +38,18 @@ print(dictionary['imie'][0])  # Radek
 # print(dictionary['Imie'])  # KeyError: 'Imie'
 print(dictionary.get("Imie"))  # None
 print(dictionary.get("Imie", "default"))  # default
+
+name1 = "GROSS"
+name2 = "groẞ"
+
+print(name1.lower() == name2.lower())  # False
+print(name1.casefold() == name2.casefold())  # True
+#     """ Return a version of the string suitable for caseless comparisons. """
+
+dictionary.update({'data': '12-12-2035'})
+print(dictionary)
+# {'imie': ['Radek', 'Tomek', 'Magda'], 'wiek': 45, 'data': '12-12-2035'}
+
+dict_small = {'x': 2}
+dict_small.update([("y", 2), ("z", 5)])
+print(dict_small)  # {'x': 2, 'y': 2, 'z': 5}
