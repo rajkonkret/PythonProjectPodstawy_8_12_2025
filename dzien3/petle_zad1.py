@@ -86,3 +86,49 @@ print("Po zakończeiu pętli")
 # 8 Większe od 4
 # Dla kazdego przejscia pętli 8
 # Po zakończeiu pętli
+
+for i in range(10, 0, -2):  # start, stop, krok, -2, odliczanie w dół
+    print(i)
+
+for i in range(-10, 0):
+    print(i)
+
+imiona = ["Radek", "Tomek", "Agata", "Marek"]
+
+for p in imiona:
+    print(p)
+
+# 0 Radek
+for i in range(len(imiona)):
+    print(i, imiona[i])
+
+for p in imiona:
+    print(imiona.index(p), p)
+# 0 Radek
+# 1 Tomek
+# 2 Agata
+# 3 Marek
+
+# enumerate() - numeruje kolekcje, zwraca numer i indeks
+for p in enumerate(imiona):
+    print(p)
+# (0, 'Radek')
+# (1, 'Tomek')
+# (2, 'Agata')
+# (3, 'Marek')
+a, b = (0, 'Radek')
+print(a, b)
+for i, o in enumerate(imiona):
+    print(i, o)
+# 0 Radek
+# 1 Tomek
+# 2 Agata
+# 3 Marek
+for i, o in enumerate(imiona, start=1):
+    print(i, o)
+# 1 Radek
+# 2 Tomek
+# 3 Agata
+# 4 Marek
+imiona = ["Radek", "Tomek", "Agata", "Marek"]
+wiek = [44, 56, 23, 43]
