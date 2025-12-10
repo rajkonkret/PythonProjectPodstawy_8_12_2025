@@ -60,9 +60,29 @@ for c in lista_parzyste:  # dla wszystkich elementów kolekcji
 lista_nazwy = ["Ala", "Tomek", "Zenek", "Basia"]
 
 for p in lista_nazwy:
-    print(p) # kolejne elementy listy
+    print(p)  # kolejne elementy listy
 # Ala
 # Tomek
 # Zenek
 # Basia
 
+for c in lista_parzyste:
+    if c > 4:
+        print(c, "Większe od 4")
+    elif c == 4:
+        print(c, "Równe 4")
+    else:
+        print(c, "Mniejsze od 4")
+    print("Dla kazdego przejscia pętli", c)
+print("Po zakończeiu pętli")
+# 0 Mniejsze od 4
+# Dla kazdego przejscia pętli 0
+# 2 Mniejsze od 4
+# Dla kazdego przejscia pętli 2
+# 4 Równe 4
+# Dla kazdego przejscia pętli 4
+# 6 Większe od 4
+# Dla kazdego przejscia pętli 6
+# 8 Większe od 4
+# Dla kazdego przejscia pętli 8
+# Po zakończeiu pętli
