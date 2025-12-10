@@ -26,15 +26,21 @@ while licznik < 10:
 # Podaj ponownie:zzxcvcz
 # Podaj ponownie:secret
 
-lista = []
-lista_int = []
+# lista = []
+# lista_int = []
+#
+# while True:
+#     wej = input("Podaj liczbę: ")
+#     if not wej.isnumeric():
+#         break
+#     lista.append(wej)
+#     lista_int.append(int(wej))
+#
+# print(lista)
+# print(lista_int)
 
-while True:
-    wej = input("Podaj liczbę: ")
-    if not wej.isnumeric():
-        break
-    lista.append(wej)
-    lista_int.append(int(wej))
+my_list = [1, 5, 2, 3, 5, 4, 5, 6, 5]
+while 5 in my_list:
+    my_list.remove(5)
+print(my_list) # [1, 2, 3, 4, 6]
 
-print(lista)
-print(lista_int)
