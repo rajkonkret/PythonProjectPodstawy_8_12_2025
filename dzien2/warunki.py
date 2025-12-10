@@ -77,3 +77,40 @@ print(f"Rabat wynosi: {rabat}")  # Rabat wynosi: 25
 # operator warunkowy
 rabat = 25 if suma_zam > 100 else 0
 print(f"Rabat wynosi: {rabat}")  # Rabat wynosi: 25
+
+# # napisąc test z...
+# punktacja
+
+punkty = 0
+odp = input("Podaj date chrztu Polski")
+# str
+if odp == '966':
+    print("Prawidłowa odpowiedź")
+    # punkty = punkty + 1
+    punkty += 1
+else:
+    print("Odpowiedź nieprawidłowa")
+# spam += 1    spam = spam + 1
+# spam -= 1    spam = spam - 1
+# spam *= 1    spam = spam * 1
+# spam /= 1    spam = spam / 1
+# spam %= 1    spam = spam % 1
+
+odp = input("Czy Ala ma kota")
+# str
+if odp.strip().casefold() == 'tak'.strip().casefold():
+    print("Prawidłowa odpowiedź")
+    # punkty = punkty + 1
+    punkty += 1
+else:
+    print("Odpowiedź nieprawidłowa")
+
+print(f"Zdobyłeś  {punkty} pkt.")
+
+slownik = {"Podaj date chrztu Polski": "966", "Czy Ala ma kota": "tak"}
+lista_klucze = list(slownik.keys())
+
+odp = input(lista_klucze[0])
+if odp.strip().casefold() == slownik[lista_klucze[0]].strip().casefold():
+    print("Odpowiedż prawidłowa")
+
