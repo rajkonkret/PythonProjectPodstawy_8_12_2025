@@ -114,3 +114,22 @@ odp = input(lista_klucze[0])
 if odp.strip().casefold() == slownik[lista_klucze[0]].strip().casefold():
     print("Odpowiedż prawidłowa")
 
+# console, email, inny
+alert_system = "console"
+error_level = "error"
+lista_b = []
+
+if alert_system == "console":
+    print("Stało się coś strasznego.")
+elif alert_system == "email":
+    if error_level == "error":
+        lista_b.append("Krytyczny")
+    elif error_level == "medium":
+        lista_b.append("Ostrzeżenia")
+    else:
+        lista_b.append("Inny")
+    print("System email")
+else:
+    print("Inny system")
+
+print(lista_b)
