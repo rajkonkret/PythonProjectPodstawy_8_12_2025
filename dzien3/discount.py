@@ -26,3 +26,18 @@ print(formated_time_12h.removeprefix("0"))  # 2:48 PM
 data_object = datetime.now().strptime("10/12/2025", "%d/%m/%Y")
 print(data_object)  # 2025-12-10 00:00:00
 print(type(data_object))  # <class 'datetime.datetime'>
+
+# days=0, seconds=0, microseconds=0,
+#                 milliseconds=0, minutes=0, hours=0, weeks=0
+tomorrow = today + timedelta(days=1)
+print(tomorrow) # 2025-12-11
+
+products  = [
+    {"sku":1, "exp_date": today, "price":200},
+    {"sku":2, "exp_date": today, "price":200},
+    {"sku":3, "exp_date": tomorrow, "price":200},
+    {"sku":4, "exp_date": today, "price":200},
+    {"sku":5, "exp_date": tomorrow, "price":200},
+    {"sku":6, "exp_date": today, "price":200},
+]
+
