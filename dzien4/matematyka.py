@@ -1,4 +1,5 @@
 import math
+from itertools import zip_longest
 
 print(math.pi)  # 3.141592653589793
 
@@ -25,3 +26,19 @@ for a, s in zip(angles, sin_values):
 
 imiona = ["Radek", "Tomek", "Agata", "Marek", "Zenek"]
 wiek = [44, 56, 23, 43]
+
+zipped = zip_longest(imiona, wiek, fillvalue=None)
+print(zipped)
+
+for item in zipped:
+    print(item)
+    # <itertools.zip_longest object at 0x10955d760>
+    # ('Radek', 44)
+    # ('Tomek', 56)
+    # ('Agata', 23)
+    # ('Marek', 43)
+    # ('Zenek', None)
+
+print(49 * "-")
+for i, w in zipped:
+    print(i, w)
