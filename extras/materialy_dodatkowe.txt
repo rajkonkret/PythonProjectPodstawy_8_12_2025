@@ -120,3 +120,9 @@ spam %= 1    spam = spam % 1
 # https://www.hackerrank.com/auth/signup
 # https://pl.altapps.net/soft/hackerrank-com
 # w3scools
+
+ pip freeze > requirements.txt
+ pip install -r requirements.txt
+
+pip install pyinstaller
+  pyinstaller --onefile --noconsole okno1.py
