@@ -23,3 +23,21 @@ with open(filename, "w", newline="") as f:
     csvwriter = csv.DictWriter(f, fieldnames=fields)
     csvwriter.writeheader()
     csvwriter.writerow(dict_name)
+
+products = [
+    {"sku": 1, "exp_date": 'today', "price": 200},
+    {"sku": 2, "exp_date": 'today', "price": 200},
+    {"sku": 3, "exp_date": 'tomorrow', "price": 200},
+    {"sku": 4, "exp_date": 'today', "price": 200},
+    {"sku": 5, "exp_date": 'tomorrow', "price": 200},
+    {"sku": 6, "exp_date": 'today', "price": 200},
+]
+
+list_product = [key for key in products[0]]
+print(list_product)  # ['sku', 'exp_date', 'price']
+
+filename = "records_discount.csv"
+with open(filename, "w", newline="") as f:
+    csvwriter = csv.DictWriter(f, fieldnames=list_product, delimiter=";")
+    csvwriter.writeheader()
+    csvwriter.writerows(products)  # writerows
