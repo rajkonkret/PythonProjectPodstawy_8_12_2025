@@ -21,7 +21,7 @@ class Human:
 
     def ruszaj(self):
 
-        if self.plec =="m":
+        if self.plec == "m":
             print("Ruszyłem w drogę")
         else:
             print("Ruszyłam w drogę.")
@@ -63,3 +63,8 @@ print(cz2.imie)
 print(cz2.plec)
 cz2.powitanie()
 # Nazywam się: Anna
+
+cz1.ruszaj()
+cz2.ruszaj()
+# Ruszyłem w drogę
+# Ruszyłam w drogę.
