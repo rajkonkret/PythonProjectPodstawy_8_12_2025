@@ -25,7 +25,26 @@ try:
     INSERT INTO developers (id, name, email, salary)
     VALUES (1, 'Radek','raj@raj.pl', 10000);
     """
-    c.execute(insert)
+    # c.execute(insert)
+    # conn.commit()
+
+    select = "SELECT * FROM developers;"
+    for row in c.execute(select):
+        print(row)
+
+    update = """
+    UPDATE developers
+    SET salary=2000
+    WHERE id=1;
+    """
+    c.execute(update)
+    conn.commit()
+
+    delete = """
+    DELETE FROM developers WHERE id=1;
+    """
+
+    c.execute(delete)
     conn.commit()
 except Exception as e:
     print("Bład podłączennia bazy danych:", e)
